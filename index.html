@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kearney Trailside Cookhouse — Kearney, ON | Poutine, All-Day Breakfast, Ice Cream</title>
+<meta name="description" content="Kearney Trailside Cookhouse at 1745 Hwy 518 E, Kearney ON: Quebec-style poutine, all-day breakfast, burgers and Kawartha Dairy ice cream. Call (705) 636-1970.">
+<style>
+:root{--acc:#2e5339;--acctx:#fff;--ink:#243020;--bg:#f6f1e3;--card:#fffdf6}
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.topbar{background:#2e5339;color:#f6f1e3;padding:.5rem 1rem;text-align:center;font-size:.9rem;letter-spacing:.04em}
+header{padding:2.2rem 1rem 1rem;text-align:center}
+h1{font-size:2.6rem;margin:.2rem 0;text-transform:uppercase;letter-spacing:.06em}
+.tag{font-style:italic;font-size:1.15rem}
+.wrap{max-width:900px;margin:0 auto;padding:0 1rem 2rem}
+.board{background:var(--card);border:3px double #2e5339;border-radius:6px;padding:1.4rem;margin:1.2rem 0}
+.board h2{margin-top:0;border-bottom:2px solid #2e5339;padding-bottom:.4rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}@media(max-width:640px){.cols{grid-template-columns:1fr}}
+ul{padding-left:1.1rem}li{margin:.35rem 0}
+.hours{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.5rem;text-align:center}
+.hours div{background:#e9e2cc;border-radius:6px;padding:.5rem}
+.cta{display:inline-block;background:#2e5339;color:#fff;padding:.8rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:700}
+.foot{text-align:center;padding:1.2rem;font-size:.85rem;opacity:.75}
+
+.cform{display:grid;gap:.7rem;max-width:520px}
+.cform label{display:grid;gap:.3rem;font-size:.92rem;font-weight:600}
+.cform input,.cform select,.cform textarea{padding:.6rem .7rem;border:1px solid #0003;border-radius:8px;font:inherit;background:#fff;color:#111}
+.cform button{padding:.75rem 1rem;border:0;border-radius:8px;font:inherit;font-weight:700;cursor:pointer;background:var(--acc);color:var(--acctx,#fff)}
+.fnote{font-size:.85rem;opacity:.8}
+.fdone{font-weight:700}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+
+<div class="topbar">On Highway 518 East — across from the Algonquin Park office · Kearney, Ontario</div>
+<header>
+  <h1>Kearney Trailside Cookhouse</h1>
+  <p class="tag">Quebec-style poutine, all-day breakfast &amp; Kawartha Dairy ice cream on the trail to Algonquin.</p>
+  <p><a class="cta" href="tel:+17056361970">Call (705) 636-1970</a></p>
+  <p>Rated 4.7★ from 115 Google reviews</p>
+</header>
+<div class="wrap">
+  <section class="board">
+    <h2>From the cookhouse kitchen</h2>
+    <div class="cols">
+      <ul>
+        <li><strong>Quebec-style poutine</strong> — real curds, rich gravy</li>
+        <li><strong>All-day breakfast</strong> — eggs, home fries &amp; toast</li>
+        <li><strong>Lumberjack stack burger</strong> — loaded &amp; stacked high</li>
+        <li><strong>Chicken fingers &amp; fries</strong></li>
+      </ul>
+      <ul>
+        <li><strong>Fish pieces &amp; fries</strong></li>
+        <li><strong>Kawartha Dairy ice cream</strong> — cones &amp; scoops</li>
+        <li><strong>Catering</strong> — large groups welcome, call ahead</li>
+        <li>Air-conditioned dining room &amp; patio</li>
+      </ul>
+    </div>
+    <p>Snowmobilers, ATVers, hikers and road-trippers: we're the natural stop on Hwy 518 — and we sell Algonquin Park passes right here.</p>
+  </section>
+  <section class="board">
+    <h2>Hours</h2>
+    <div class="hours">
+      <div>Mon<br><strong>10–5</strong></div><div>Tue<br><strong>10–5</strong></div><div>Wed<br><strong>9–5</strong></div>
+      <div>Thu<br><strong>10–5</strong></div><div>Fri<br><strong>10–5</strong></div><div>Sat<br><strong>10–5</strong></div><div>Sun<br><strong>10–5</strong></div>
+    </div>
+    <p style="text-align:center">1745 Highway 518 E, Kearney, ON P0A 1M0 · Find us on Facebook: Kearney Trailside Cookhouse</p>
+  </section>
+  <section class="board">
+    <h2>Takeout &amp; catering requests</h2>
+    
+      <form class="cform" onsubmit="event.preventDefault();var r='KTC-'+Math.floor(1000+Math.random()*9000);document.getElementById('KTCref').textContent=r;document.getElementById('KTCdone').style.display='block';this.querySelector('button').disabled=true;">
+        <label>Your name<input type="text" required autocomplete="name"></label>
+        <label>Phone<input type="tel" required autocomplete="tel"></label>
+        <label>Service<select>
+          <option>Takeout order request</option>
+          <option>Catering inquiry</option>
+          <option>Large group / event order</option>
+          <option>General question</option>
+        </select></label>
+        <label>Details (optional)<textarea rows="3"></textarea></label>
+        <button type="submit">Send request</button>
+        <p class="fnote">Concept preview form — it doesn't send or store anything yet. To reach us today, please call (705) 636-1970.</p>
+        <p class="fdone" id="KTCdone" style="display:none">Reference: <strong id="KTCref"></strong> — concept only; please call to confirm.</p>
+      </form>
+  </section>
+</div>
+<footer class="foot"><p>Concept website designed for Kearney Trailside Cookhouse · Built by Jake Hersky — Ottawa web designer · hersky.info</p></footer>
+
+</body>
+</html>
